@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "com.doodle.spearsmod.mixin.client",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"ExampleClientMixin",
+		"MinecraftClientMixin",
+		"ItemRendererAccessor",
+		"ModelLoaderMixin",
+		"ItemRendererMixin"
+
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

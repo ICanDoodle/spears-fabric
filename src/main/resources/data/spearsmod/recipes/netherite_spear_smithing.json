@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "spearsmod:diamond_spear"
+  },
+  "result": {
+    "item": "spearsmod:netherite_spear"
+  }
+}

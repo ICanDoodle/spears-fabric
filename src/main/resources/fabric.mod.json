@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "spearsmod",
+	"version": "1.5",
+	"name": "Simple Spears",
+	"description": "A simple mod adding vanilla friendly spears (requires MidnightLib)",
+	"authors": [
+		"ICanDoodle"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/spearsmod/simplespears.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.doodle.spearsmod.SimpleSpears"
+		],
+		"client": [
+			"com.doodle.spearsmod.SimpleSpearsClient"
+		]
+	},
+	"mixins": [
+		"spearsmod.mixins.json",
+		{
+			"config": "spearsmod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
